@@ -4,6 +4,7 @@ int main()
     printf("Enter two range:");
   scanf("%d %d", &num1, &num2); 
     printf("prime numbers are: \n");
+    //printing prime numbers between num1 and num2(as its mentioned range in qn)
    for(i=num1+1; i<num2; ++i)
    {      flag=0;
       for(j=2; j<=i/2; ++j)
