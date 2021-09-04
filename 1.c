@@ -1,11 +1,9 @@
-#include<stdio.h>
-int main(){
-    
-for(int i=5;i>0;i--){
-    for(int j=i;j>0;j--){
-        printf("*");
-    } printf("\n");
-}
-
-    return 0;
-}
+ #include <stdio.h>
+ #include <stdio.h>
+ #include <stdio.h>
+#include <stdio.h>
+    void main()
+    {
+        int b = 5 + 7 * 4 - 9 * (3, 2);
+        printf("%d", b);
+    }
