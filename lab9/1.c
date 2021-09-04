@@ -1,52 +1,31 @@
-#include <stdio.h>
-
-int MAX_SIZE=0; // Maximum size of the array
-
-int main()
-{
-    int arr[MAX_SIZE]; 
-    int size;          
-    int i, j, k;     
-
-    printf("Enter size of the array : ");
-    scanf("%d", &size);
-
-    printf("Enter elements in array : ");
-    for(i=0; i<size; i++)
-    {
-        scanf("%d", &arr[i]);
-    }
-
-
-    
-    for(i=0; i<size; i++)
-    {
-        for(j=i+1; j<size; j++)
-        {
-            
-            if(arr[i] == arr[j])
-            {
-               
-                for(k=j; k < size - 1; k++)
-                {
-                    arr[k] = arr[k + 1];
-                }
-
-                
-                size--;
-
-              
-                j--;
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+   int a[50],i,j,k, count = 0, dup[50], number;
+   printf("Enter size of the array\n");
+   scanf("%d",&number);
+   printf("Enter Elements of the array:\n");
+   for(i=0;i<number;i++){
+      scanf("%d",&a[i]);
+      dup[i] = -1;
+   }
+   printf("Entered element are: \n");
+   for(i=0;i<number;i++){
+      printf("%d ",a[i]);
+   }
+   for(i=0;i<number;i++){
+      for(j = i+1; j < number; j++){
+         if(a[i] == a[j]){
+            for(k = j; k <number; k++){
+               a[k] = a[k+1];
             }
-        }
-    }
-
-
-    printf("\nArray elements after deleting duplicates : ");
-    for(i=0; i<size; i++)
-    {
-        printf("%d\t", arr[i]);
-    }
-
-    return 0;
+            j--;
+            number--;
+         }
+      }
+   }
+   printf("\nAfter deleting the duplicate element the Array is:\n");
+   for(i=0;i<number;i++){
+      printf("%d ",a[i]);
+   }
 }
