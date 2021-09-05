@@ -7,7 +7,7 @@ int main(){
    printf("Enter Elements of the array:\n");
    for(i=0;i<number;i++){
       scanf("%d",&a[i]);
-      dup[i] = -1;
+      
    }
    printf("Entered element are: \n");
    for(i=0;i<number;i++){
