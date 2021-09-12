@@ -5,9 +5,9 @@ int a[3][3];
 	int i = 0, j = 0;
  
 	printf ("Enter the elements of the matrix\n");
-	for (i = 0; i < 3; i++)
+	for (i = 0; i < 2; i++)
 	{
-		for (j = 0; j < 3; j++)
+		for (j = 0; j < 2; j++)
 		{
 			scanf ("%d", &a[i][j]);
 		}
