@@ -12,23 +12,14 @@ void main()
     gets(y);
 
     for (int i = 0; i < strlen(x); i++)
-    {
-        if (x[i] == y[0])
-        {
-            checker = i;
+    {       if (x[i] == y[0])
+        {           checker = i;
             for (int j = 0; j < strlen(y); j++)
-            {
-                if (y[j] == x[checker++])
-                {
-                    count++;
+            {                if (y[j] == x[checker++])
+                {                    count++;
                 }
                 if (count == (strlen(y) - 1))
-                {
-                    maincount++;
-                }
-            }
-            count = 0;
-        }
-    }
+                {                    maincount++;
+                }            }            count = 0;        }    }
     printf("count: %ld", maincount);
 }
