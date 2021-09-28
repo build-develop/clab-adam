@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+
 void main()
 {   char x[100];
     int count = 0;
